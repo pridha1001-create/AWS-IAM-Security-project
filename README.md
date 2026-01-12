@@ -41,3 +41,12 @@ An IAM role named EC2S3Role was attached to an EC2 instance to allow access to S
 
 ### Test Command
 aws s3 ls
+## OutPut
+ec2-static-media-001
+## Permission Testing
+Developers can start/stop EC2
+Developers cannot terminate EC2
+Interns have restricted access
+## Outcome
+Successfully implemented secure IAM architecture using AWS best practices.
+
