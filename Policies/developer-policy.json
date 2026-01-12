@@ -1,0 +1,26 @@
+ Create folder **policies/**  
+ Create file **developer-policy.json**  
+ Paste *ONLY this*
+
+   json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowEC2StartStop",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:StartInstances",
+        "ec2:StopInstances",
+        "ec2:DescribeInstances"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "DenyEC2Terminate",
+      "Effect": "Deny",
+      "Action": "ec2:TerminateInstances",
+      "Resource": "*"
+    }
+  ]
+}
